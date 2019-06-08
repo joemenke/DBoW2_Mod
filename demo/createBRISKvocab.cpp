@@ -85,7 +85,7 @@ void loadFeatures(vector<vector<cv::Mat > > &features)
                 briskDescriptionScaleInvariance_));
 
   vector<cv::String> filenames;
-  glob("/externd/datasets/Bovisa_2008_09_01-FRONTAL/*.png", filenames, false);
+  cv::glob("/externd/datasets/Bovisa_2008_09_01-FRONTAL/*.png", filenames, false);
 
   cout << "Extracting BRISK features..." << endl;
   NIMAGES = filenames.size();
